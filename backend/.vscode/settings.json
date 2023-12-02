@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/6db4d8fc-09a7-4752-ae58-9205fc1bb393/resourceGroups/covid-web-app-project-rg2/providers/Microsoft.Web/sites/covid-web-app-project",
+    "appService.deploySubpath": "."
+}

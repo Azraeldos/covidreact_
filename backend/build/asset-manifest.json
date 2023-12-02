@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed2ab09b.css",
+    "main.js": "/static/js/main.f401cac8.js",
+    "static/media/donateItems.jpg": "/static/media/donateItems.9341da80b07c1d974c59.jpg",
+    "static/media/handWashing.jpg": "/static/media/handWashing.e9a7b4e7d988e7415f7d.jpg",
+    "static/media/masksBanner.jpg": "/static/media/masksBanner.24a81673e4d16e6ce8f3.jpg",
+    "static/media/newLogo.png": "/static/media/newLogo.afc7ba007b8f7319f4e1.png",
+    "static/media/volunteerColorfulHands.png": "/static/media/volunteerColorfulHands.a72764421a5ba8c11c4c.png",
+    "static/media/moreInfoBanner.webp": "/static/media/moreInfoBanner.5535997bd1e4864e8e60.webp",
+    "static/media/deathByAge.png": "/static/media/deathByAge.d937dfae5071bf8ea3e6.png",
+    "static/media/monthlyConfirmCases09-10.png": "/static/media/monthlyConfirmCases09-10.1a8c9111b616539d0c08.png",
+    "static/media/Rvalue.png": "/static/media/Rvalue.ee3582fbe892d5ab9a92.png",
+    "static/media/covid19VaxCard.jpg": "/static/media/covid19VaxCard.bdc2c51a2781f498d2d9.jpg",
+    "static/media/covidTestKit.webp": "/static/media/covidTestKit.6215d3128d5a683d3705.webp",
+    "static/media/maskNew.jpg": "/static/media/maskNew.ad72215c7aca50ff2957.jpg",
+    "index.html": "/index.html",
+    "main.ed2ab09b.css.map": "/static/css/main.ed2ab09b.css.map",
+    "main.f401cac8.js.map": "/static/js/main.f401cac8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed2ab09b.css",
+    "static/js/main.f401cac8.js"
+  ]
+}

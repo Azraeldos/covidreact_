@@ -2,17 +2,19 @@ import React from 'react';
 
 import { Footer, MoreInfo, Volunteer, Vaccinations, Testing, Header, Intro, Donations } from './containers';
 import { Navbar } from './components';
+import { RValue, RChart } from './components/RData';
 import './App.css';
 
 const App = () => (
     <div className = "App">
       <div className="gradient__bg">
-      <Navbar />
-      <Header />
-        </div> 
-        <div>
+        <Navbar />
+        <Header />
+      </div> 
+      <div>
         <Intro/>
-        </div>
+        <RChart/>
+      </div>
         <div>
         </div>
         <div className='More_Info'>
