@@ -1,0 +1,102 @@
+.container_Rinfo {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.Rchart {
+    display: flex;
+    flex: 1;
+}
+
+.item_RInfo {
+    padding: 10px;
+}
+
+.accordion {
+  margin: 60px auto;
+  width: 600px;
+
+}
+
+.accordion li{
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: whitesmoke;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.15);
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.accordion .content {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="checkbox"]:checked+label+.content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+  background-color:whitesmoke;
+}
+
+.accordion input[type="checkbox"]:checked+label::before{
+  content: '-';
+}
+
+.answer {
+  background-color:#A7C7E7;
+}
+
+.flex-item{
+  display: flex;
+  width: calc(50%-2em);
+  margin: 1em;
+  box-sizing: border-box;
+}
+              
+.container_RInfo {
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 22% 50%, rgba(255, 255, 255, 1) 0%, rgba(130, 201, 238, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 22% 50%, rgba(255, 255, 255, 1) 0%, rgba(130, 201, 238, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 22% 50%, rgba(255, 255, 255, 1) 0%, rgba(130, 201, 238, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 22% 50%, rgba(255, 255, 255, 1) 0%, rgba(130, 201, 238, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 22% 50%, rgba(255, 255, 255, 1) 0%, rgba(130, 201, 238, 1) 100%);
+}
+          

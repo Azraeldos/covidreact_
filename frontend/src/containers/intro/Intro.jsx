@@ -5,8 +5,11 @@ import logo2 from '../../assets/Rvalue.png';
 import logo3 from '../../assets/monthlyConfirmCases09-10.png';
 const Intro = () => {
   return (
-    <div class = "row">
-        <div><h1>Covid-Answers</h1></div>
+    <div class = "container">
+      
+      
+
+        {/* <div><h1>Covid-Answers</h1></div>
       <div class = "column">
         <div class = "picture1" >
         <img src= {logo1} alt="Pie" />
@@ -31,9 +34,6 @@ const Intro = () => {
           in determining how fast an outbreak can occur.</p>
         </div>
       {/*  */}
-    <div>
-
-    </div>
     </div>
   )
 }

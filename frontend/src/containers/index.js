@@ -6,3 +6,4 @@ export { default as Header } from './header/Header';
 export { default as Volunteer } from './volunteer/Volunteer';
 export { default as Testing } from './testing/Testing';
 export { default as Donations } from './donations/Donations';
+export { default as RInfo } from './RInfo/RInfo';

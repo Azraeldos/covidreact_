@@ -1,3 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.Rchart {
+  display: flex;
+  flex: 1;
+}
+
+.item {
+  padding: 10px;
+}
 .column {
     float: left;
     width: 33.33%;

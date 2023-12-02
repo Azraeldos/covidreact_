@@ -1,22 +1,15 @@
 import React from 'react';
 
-import { Footer, MoreInfo, Volunteer, Vaccinations, Testing, Header, Intro, Donations } from './containers';
+import { Footer, MoreInfo, Volunteer, Vaccinations, Testing, Header, Intro, Donations, RInfo } from './containers';
 import { Navbar } from './components';
-import { RValue, RChart } from './components/RData';
 import './App.css';
 
 const App = () => (
     <div className = "App">
-      <div className="gradient__bg">
         <Navbar />
         <Header />
-      </div> 
-      <div>
-        <Intro/>
-        <RChart/>
-      </div>
-        <div>
-        </div>
+        {/* <Intro/> */}
+        <RInfo/>
         <div className='More_Info'>
         <MoreInfo />
         </div>

@@ -1,13 +1,17 @@
 .navbar {
   display: flex; /* Enable flexbox layout */
-  justify-content: center; /* Center elements horizontally */
+  text-align: center;
+  position: fixed;
+  padding-left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 
 .navbar a{
   color: #191970;
-  justify-content: center;
-  text-decoration: none;
+  display: block;
+  margin: 0;
   padding: 15px;
   display: block;
   text-align: center;
@@ -18,26 +22,19 @@
   background-color: #AFDEFF;
 }
 .navbar li{
-  float: left;
+  display: inline-block;
+  justify-content: space-around;
 }
 
 .navbar ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
   overflow: hidden;
   background-color: #A7C7E7;
-  position: fixed;
-  top: 0;
   width: 100%;
-  
-  
 }
 
-
-.navbar li{
-  float: left;
-}
 
 .navbar-links_logo{
   width: auto;

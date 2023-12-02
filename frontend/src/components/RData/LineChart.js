@@ -15,13 +15,18 @@ const LineChart = ({ data }) => {
       labels: dates,
       datasets: [
         {
-          label: 'R Values',
+          //label: 'R Values',
           data: rValues,
-          borderColor: 'rgba(75,192,192,1)',
           borderWidth: 2,
-          pointBackgroundColor: 'rgba(75,192,192,1)',
-          pointRadius: 1,
+          pointRadius: 4,
           fill: false,
+          borderColor: 'rgba(173, 216, 230, 1)', // LightBlue
+          backgroundColor: 'rgba(173, 216, 230, 0.2)', // LightBlue with transparency
+          pointBackgroundColor: 'rgba(0, 0, 50, 1)', // SteelBlue
+          pointBorderColor: 'rgba(0,0,50,1)',
+          pointHoverBackgroundColor: '#fff', // White on hover
+          pointHoverBorderColor: 'rgba(173, 216, 230, 1)', // LightBlue on hover
+          pointStyle: 'triangle',
         },
       ],
     };
@@ -30,11 +35,19 @@ const LineChart = ({ data }) => {
         responsive: true,
         plugins: {
             legend: {
-                position: "top"
+                display: false,
+                //position: "top"
             },
             title: {
                 display: true,
-                text: "30 Day R Value Data"
+                text: "30 Day R Value Data",
+                padding: {
+                  top: 10,
+                  bottom: 10,
+                },
+                font: {
+                  size: 24,
+                },
             }
         },
         scales: {
