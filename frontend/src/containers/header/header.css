@@ -5,14 +5,15 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
- @keyframes kenburns-top-left{0%{transform:scale(1) translate(0,0);transform-origin:16% 16%}100%{transform:scale(1.25) translate(-20px,-15px);transform-origin:top left}}
-img{
+ .img-mask{
+  justify-content: center;
   max-width: 100%;
   max-height: 100%;
   z-index: -1;
   position: relative;
+  overflow: hidden;
 }
-.kenburns-top-left{animation:kenburns-top-left 5s ease-out both}
+
 .overlay-text {
   position: absolute;
   top: 20%; 

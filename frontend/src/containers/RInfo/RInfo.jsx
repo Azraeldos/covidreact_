@@ -24,7 +24,9 @@ ChartJS.register(
 
 const RInfo = () => {
     const [jsonData, setJsonData] = useState([]);
+    const [currentRValue, setCurrentRValue] = useState(null);
   
+    //get R array
     useEffect(() => {
       // Fetch your JSON data here and set it to the state
       const fetchData = async () => {
@@ -39,6 +41,21 @@ const RInfo = () => {
   
       fetchData();
     }, []);
+
+    useEffect( () => {
+      const loadRValue = async () => {
+      try {
+          const response = await fetch('/rvalue');
+          const rvalueresponse = await response.json();
+          setCurrentRValue(rvalueresponse[rvalueresponse.length-1].RVal);
+      } catch (error) {
+          console.log('Error loading R value:', error.message);
+          setCurrentRValue(null);
+      }
+  }
+
+      loadRValue();
+  },[]);
   
     return (
       <div className="container_RInfo">
@@ -46,42 +63,21 @@ const RInfo = () => {
         <div className ="item_RInfo">
           <LineChart data={jsonData}/>
         </div>
-        {/*
         <div className="item_RInfo">
-          <h2>R Values</h2>
-          <ul className="accordion">
-            <li>
-              <input type="checkbox" name="accordion" id="first"/>
-              <label for="first">What is an R Value?</label>
-              <div className="content">
-                  <p className="answer">An R or R<sub>0</sub> value is a number that represents 
+          <h2>R<sub>0</sub> Values</h2>
+                  <p className="answer">An R<sub>0</sub> value is a number that represents 
                   the number of people that a single infected person can be expected to transmit that disease to.
+                  This single number provides an effective way of monitoring an infectious disease.
                   </p>
-              </div>
-            </li>
-            <li>
-              <input type="checkbox" name="accordion" id="second"/>
-              <label for="second">What should I know about R Values?</label>
-              <div className="content">
                   <p className="answer">
                     If the R Value is larger than 1, on average every infected person
                     infects more than 1 other person. This can lead to an outbreak if preventative
                     measures are not used. We generally want the R Value to be less than 1.
                   </p>
-              </div>
-            </li>
-            <li>
-              <input type="checkbox" name="accordion" id="third"/>
-              <label for="third">Where can I learn more about R0 Values?</label>
-              <div className="content">
                   <p className="answer">
-                    Learn more here!
-                </p>
-              </div>
-            </li>
-          </ul>
+                    Last Reported R<sub>0</sub> Value: {currentRValue}
+                  </p>
         </div>
-      */}
       </div>
     );
 }; 

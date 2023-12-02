@@ -48,6 +48,7 @@ const LineChart = ({ data }) => {
                 font: {
                   size: 24,
                 },
+                color: '#191970',
             }
         },
         scales: {
@@ -57,15 +58,14 @@ const LineChart = ({ data }) => {
             }
         },
         maintainAspectRatio: false,
-        height: 600,
-        width: 800,
+        aspectRatio: 1|2,
     })
 
     setChartData(chartConfig);
   }, [data]);
 
   return (
-    <div style={ {width: '800px', height: '600px'}}>
+    <div style={{height: "600px"}}>
       {chartData && <Line data={chartData} options = {chartOptions}/>}
     </div>
   );

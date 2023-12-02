@@ -6,8 +6,8 @@
 }
 
 body {
-    background: var(--color-bg);
-    margin: 0px;
+  background: var(--color-bg);
+  margin: 0px;
   background-color:whitesmoke;
   margin-bottom: -100px;
   display: flex;
@@ -15,19 +15,21 @@ body {
   min-height: 100vh;
   font-family: 'Raleway';font-size: 22px;
   font-weight: bold;
+
 }
-main{
-  margin-left: 20px;
-  margin-right: 20px;
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   /*margin-bottom: 100px;*/
 }
-a {
-    color: unset;
-    text-decoration: none;
+.mainItem {
+  flex: 1;
+  justify-content: space-around;
 }
 
+/*
 .gradient__bg {
-    /* global 92%+ browsers support */
     background: radial-gradient(circle at 3% 25%, whitesmoke 100%);
 }
 .gradient__text{
@@ -87,4 +89,4 @@ padding: 4rem 6rem;
             margin: 4rem 2rem;
         }
   }
-  
+*/ 

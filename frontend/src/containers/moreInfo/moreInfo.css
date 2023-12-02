@@ -1,3 +1,4 @@
+/*
 .column {
     float: left;
     width: 33.33%;
@@ -16,11 +17,35 @@
     max-width: 100%;
     max-height: 100%;
   }
-  .logo1{
-    height: 300px; 
-    width: auto; 
-    text-align: center;
+*/
+.container_moreInformation{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50%;
+  padding-right:10%;
+}
 
-  }
-  
+.moreInformationItem{
+  background-color: rgba(175,222,255,0.8); 
+  color: #191970;
+  padding: 20px 20px; 
+  font-size: 18px; 
+  text-align: left;
+  margin: 10px;
+  border-radius: 20px;
+}
 
+.moreInformationItem ul {
+  margin-left: 20px;
+}
+.logo1{
+  width: 100%; 
+  text-align: center;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.pictureMoreInformation {
+  width: 100%;
+  overflow: hidden;
+}

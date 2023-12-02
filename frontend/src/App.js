@@ -5,13 +5,19 @@ import { Navbar } from './components';
 import './App.css';
 
 const App = () => (
-    <div className = "App">
+    <div>
         <Navbar />
-        <Header />
-        {/* <Intro/> */}
+        <div className ="main">
+        <div className ="mainItem">
+          <Header />
+        </div>
+        <div className ="mainItem">
         <RInfo/>
-        <div className='More_Info'>
+        </div>
+        <div className ="mainItem">
         <MoreInfo />
+        </div>
+        {/*
         </div>
         <div>
         <Testing />
@@ -27,7 +33,8 @@ const App = () => (
         </div>
         <div>
         <Footer />
-        </div>
+</div>*/}
+      </div>
     </div>
   );
 

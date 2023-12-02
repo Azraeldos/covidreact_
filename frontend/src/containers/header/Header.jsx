@@ -4,9 +4,9 @@ import logo1 from '../../assets/masksBanner.jpg';
 
 const Header = () => {
   return (
-    <div className = "image-container kenburns-top-left">
-      <img src ={logo1} alt="Mask banner" />
-      <div className="overlay-text text-shadow-drop-center">
+    <div className = "image-container">
+      <img className = "image-mask" src ={logo1} alt="Mask banner" /> 
+      <div className="overlay-text text-shadow-drop-center"> 
         <h1>COVID-19 HUB: Local Resources</h1>
         <p>Welcome to the San Bernardino COVID-19 Resource Page; your 
         go-to hub for local updates and essential information. Stay informed about the 
