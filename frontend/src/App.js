@@ -17,6 +17,8 @@ const App = () => (
         <div className ="mainItem">
         <MoreInfo />
         </div>
+        
+        </div>
         <div>
         <Testing />
         </div>
