@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer, MoreInfo, Volunteer, Vaccinations, Testing, Header, Intro, Donations, RInfo } from './containers';
+import { Footer, MoreInfo, Volunteer, Vaccinations, Testing, Header, Donations, RInfo } from './containers';
 import { Navbar } from './components';
 import './App.css';
 
@@ -17,7 +17,9 @@ const App = () => (
         <div className ="mainItem">
         <MoreInfo />
         </div>
-        <div className="mainItem">
+        {/*
+        </div>
+        <div>
         <Testing />
         </div>
         <div className="mainItem">
@@ -33,7 +35,7 @@ const App = () => (
         <Footer />
         </div>
       </div>
-    </div>
+    
   );
 
 
