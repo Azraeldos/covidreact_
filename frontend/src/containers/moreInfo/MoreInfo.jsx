@@ -10,7 +10,9 @@ import {moreInformationData} from './AccordionData';
 const MoreInfo = () => {
 
   return (
-    <div className="container_moreInformation" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "100vh"}}>
+    <div id='More Information'>
+      <h1 className="h1_MoreInfo">More Information</h1>
+    <div className="container_moreInformation" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "130vh"}}>
         {/* <img className = "logo1" src={logo1} alt="Students wearing masks in class raising their hands. /logo"/>  */}
       <div className="moreInformationItem" style={{marginTop: "50px"}}>
         <h2>What is Covid-19?</h2>
@@ -37,7 +39,7 @@ const MoreInfo = () => {
         <h2>How can you protect yourself?</h2>
         <p>To protect yourself and others from Covid-19 individuals are recommended to wear a mask in public to protect from infected droplets and reduce spread. Individuals should also wash their hands frequently as well as schedule an appointment for vaccination. In addition, social distancing is recommended to help reduce spread through infected droplets in the air.</p>
       </div>
-      <div className="moreInformationItem" >
+      <div className="moreInformationItem" style={{marginBottom: "50px"}} >
         <h2>How does it spread?</h2>
         <p>
           Covid-19 primarily spreads through infected droplets transmitted through the 
@@ -47,6 +49,7 @@ const MoreInfo = () => {
           infected droplets produced by infected individuals.
         </p>
       </div> 
+    </div>
     </div>
   )
 }
