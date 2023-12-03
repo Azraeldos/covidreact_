@@ -17,12 +17,10 @@ const App = () => (
         <div className ="mainItem">
         <MoreInfo />
         </div>
-        {/*
-        </div>
-        <div>
+        <div className="mainItem">
         <Testing />
         </div>
-        <div>
+        <div className="mainItem">
         <Vaccinations />
         </div>
         <div>
@@ -33,7 +31,7 @@ const App = () => (
         </div>
         <div>
         <Footer />
-</div>*/}
+        </div>
       </div>
     </div>
   );

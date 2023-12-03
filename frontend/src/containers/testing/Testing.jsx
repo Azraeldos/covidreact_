@@ -4,15 +4,11 @@ import logo1 from '../../assets/covidTestKit.webp';
 
 const Testing = () => {
   return (
-    <div id ="Testing">
-     <br /><br />
-     <h1>Testing</h1>
-      <div class ="pictureTesting" >
-        <img src={logo1} alt="A COVID-19 test kit. /logo"/>
-        </div> 
-        {/*  */}
-        <div class="row">
-        <div class="column">
+    <div>
+     <h1 className="h1_testing">Testing</h1>
+      <div className="container_testing" id ="Testing" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "100vh"}}>
+
+        <div class="testing_item">
           <h2>Importance of Testing</h2>
 
           <p>
@@ -22,7 +18,7 @@ const Testing = () => {
           </p>
 
         </div>
-        <div class="column">
+        <div class="testing_item">
           <h2>Types of Tests</h2>
           <p>
             Two main types of COVID-19 tests exist: Polymerase Chain Reaction (PCR) 
@@ -35,7 +31,7 @@ const Testing = () => {
             available within 3 days.
           </p>
         </div>
-        <div class="column" >
+        <div class="testing_item" >
           <h2>Should You Get Tested?</h2>
           <p>
             The current recommendation from the CDC is to get tested immediately 
@@ -46,11 +42,12 @@ const Testing = () => {
             least 5 full days after your exposure before taking a test.
           </p>
         </div>    
-      </div>
 
-      {/* <!--2nd row of three columns--> */}
-      <div class="row">
-        <div class="column">
+        
+        
+      </div>
+      <div class="test_below_text">
+      <div class="testing_item">
           <h2>Where can I get tested?</h2>
           <p>
             My Turn allows you to search for local testing by ZIP code:
@@ -72,7 +69,7 @@ const Testing = () => {
           </a>
 
         </div>
-        <div class="column">
+        <div class="testing_item">
           <h2>I tested positive. Now what?</h2>
           <p>
             <b>Isolate yourself from others.</b> Stay home and away from other people, 
@@ -86,7 +83,7 @@ const Testing = () => {
             options and help to develop a plan to recover safely.
           </p>
         </div>
-        <div class="column">
+        <div class="testing_item">
           <h2>I tested negative. Now what?</h2>
           <p>
             A negative COVID-19 test means only that the test did not detect the virus.
@@ -96,8 +93,6 @@ const Testing = () => {
           </p>
         </div>
       </div>
-
-
     </div>
   )
 }

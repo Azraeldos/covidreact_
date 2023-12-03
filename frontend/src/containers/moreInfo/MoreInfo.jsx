@@ -3,7 +3,12 @@ import './moreInfo.css';
 import logo1 from '../../assets/moreInfoBanner.webp';
 import logo2 from '../../assets/handWashing.jpg';
 import logo3 from '../../assets/maskNew.jpg';
+import {Accordion} from '../../utils';
+import {moreInformationData} from './AccordionData';
+
+
 const MoreInfo = () => {
+
   return (
     <div className="container_moreInformation" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "100vh"}}>
         {/* <img className = "logo1" src={logo1} alt="Students wearing masks in class raising their hands. /logo"/>  */}
@@ -13,8 +18,8 @@ const MoreInfo = () => {
           Covid-19 is a deadly disease caused by a virus named SARS-CoV-2. It can 
           be contagious and spread quickly depending on how quick the public are able to adapt to precautions. It is primarily transmitted through infected individuals droplets caused by sneezing and coughing. While symptoms may be similar to the common flu, Covid-19 can quickly overcome the body’s immune system leading to death.
         </p>
-          {/* <h2>How to wash your hands</h2>
-            <img src={logo2} alt="infographic explaining how to wash your hands effectly"/> */}
+          {/*<h2>How to wash your hands</h2>
+            <img src={logo2} alt="infographic explaining how to wash your hands effectly"/>*/}
       </div>
       <div className="moreInformationItem">
       <h2>What are the Symptoms?</h2>

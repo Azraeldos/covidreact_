@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.579bba41.css",
-    "main.js": "/static/js/main.a908f28e.js",
+    "main.css": "/static/css/main.2375ab70.css",
+    "main.js": "/static/js/main.27997909.js",
     "static/media/donateItems.jpg": "/static/media/donateItems.9341da80b07c1d974c59.jpg",
     "static/media/handWashing.jpg": "/static/media/handWashing.e9a7b4e7d988e7415f7d.jpg",
     "static/media/masksBanner.jpg": "/static/media/masksBanner.24a81673e4d16e6ce8f3.jpg",
@@ -15,11 +15,11 @@
     "static/media/covidTestKit.webp": "/static/media/covidTestKit.6215d3128d5a683d3705.webp",
     "static/media/maskNew.jpg": "/static/media/maskNew.ad72215c7aca50ff2957.jpg",
     "index.html": "/index.html",
-    "main.579bba41.css.map": "/static/css/main.579bba41.css.map",
-    "main.a908f28e.js.map": "/static/js/main.a908f28e.js.map"
+    "main.2375ab70.css.map": "/static/css/main.2375ab70.css.map",
+    "main.27997909.js.map": "/static/js/main.27997909.js.map"
   },
   "entrypoints": [
-    "static/css/main.579bba41.css",
-    "static/js/main.a908f28e.js"
+    "static/css/main.2375ab70.css",
+    "static/js/main.27997909.js"
   ]
 }

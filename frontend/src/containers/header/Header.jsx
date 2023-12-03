@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <div className = "image-container">
       <img className = "image-mask" src ={logo1} alt="Mask banner" /> 
-      <div className="overlay-text text-shadow-drop-center"> 
-        <h1>COVID-19 HUB: Local Resources</h1>
+      <div className="overlay-text"> 
+        <h1 className="tracking-in-expand-fwd">COVID-19 HUB: Local Resources</h1>
         <p>Welcome to the San Bernardino COVID-19 Resource Page; your 
         go-to hub for local updates and essential information. Stay informed about the 
         latest developments, vaccination centers, testing sites, and community resources 

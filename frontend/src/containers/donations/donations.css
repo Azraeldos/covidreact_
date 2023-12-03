@@ -1,30 +1,30 @@
-img{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .picture1 {
-    width: auto;
-    height: 600px;
-    text-align: center;
-  }
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; 
-    background-color: white;
-  }
+.h1_donations {
+  background-color: #AFDEFF;
+  color: #191970;
+  text-align: center;
+}
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    background-color: white;
-  }
+.container_donations{
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-end;
+}
+
+.container_donationsItem {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  margin-bottom: 50px;
+  background-color: rgba(175,222,255,0.8); 
+  text-align: center;
+}
+  
  
-  .button{
+.button{
   cursor: pointer;
-  }
-  .pictureDonation{
-    height: 500px; width: auto;text-align: center;
-  }
+}
+.pictureDonation{
+  height: 500px; width: auto;text-align: center; 
+}

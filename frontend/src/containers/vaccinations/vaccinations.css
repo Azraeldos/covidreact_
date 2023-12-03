@@ -1,36 +1,26 @@
-img{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .picture1 {
-    width: auto;
-    height: 600px;
-    text-align: center;
-  }
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; 
-    background-color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    background-color: white;
-  }
-  h1, h2, h3 {
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: white;
+.h1_vaccinations {
+  background-color: #AFDEFF;
+  color: #191970;
+  text-align: center;
 }
-.pictureVaccinations{
-  height: 500px; width: auto;text-align: center;
+
+.container_vaccinations{
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-end;
 }
+.container_vaccinationItem {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  background-color: rgba(175,222,255,0.8); 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
 .button{
   cursor: pointer;
 }
@@ -49,7 +39,7 @@ img{
   margin: 20px;
   padding: 10px;
   border-radius: 8px;
-  background: whitesmoke;
+  background: rgba(175,222,255,0.8);
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
               -6px -6px 10px -1px rgba(255,255,255,0.15);
 }
@@ -61,6 +51,7 @@ img{
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  background: rgba(175,222,255,0.8);
 }
 
 label::before {
@@ -75,7 +66,7 @@ input[type="checkbox"] {
 }
 
 .accordion .content {
-  background-color: whitesmoke;
+  background: rgba(175,222,255,0.8);
   color: rgb(0, 0, 0);
   padding: 0 10px;
   line-height: 26px;
@@ -87,7 +78,7 @@ input[type="checkbox"] {
 .accordion input[type="checkbox"]:checked+label+.content {
   max-height: 400px;
   padding: 10px 10px 20px;
-  background-color:whitesmoke;
+  background-color: rgba(175,222,255,0.8);
 }
 
 .accordion input[type="checkbox"]:checked+label::before{

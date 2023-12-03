@@ -4,14 +4,8 @@ import logo1 from '../../assets/covid19VaxCard.jpg';
 const Vaccinations = () => {
   return (
     <div id = "Vaccinations">
-      <br/><br />
-      <h1>Vaccinations</h1>
-      <div class ="pictureVaccinations">
-        <img src={logo1} alt="A COVID-19 vaccine card. /logo"/>
-        </div>
-      <main class="site-content"/>
-        {/* <!--Blurb on Vaccines-->
-        <!--FAQ for Vaccine Content--> */}
+      <h1 className="h1_vaccinations">Vaccinations</h1>
+      <div className="container_vaccinations" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "100vh"}}>
         <ul class="accordion">
           <li>
               <input type="checkbox" name="accordion" id="first"/>
@@ -94,6 +88,7 @@ const Vaccinations = () => {
             </div>
           </li>
       </ul>
+     </div>
      </div>
     
   )
