@@ -3,8 +3,6 @@ import './moreInfo.css';
 import logo1 from '../../assets/moreInfoBanner.webp';
 import logo2 from '../../assets/handWashing.jpg';
 import logo3 from '../../assets/maskNew.jpg';
-import {Accordion} from '../../utils';
-import {moreInformationData} from './AccordionData';
 
 
 const MoreInfo = () => {

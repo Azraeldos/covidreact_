@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-around;
   align-content: flex-start;
-  align-items: flex-end;
 }
 .container_vaccinationItem {
   float: left;
@@ -24,74 +23,64 @@
 .button{
   cursor: pointer;
 }
-.content{
-  background-color: white;
-}
-.accordion {
-  margin: 60px auto;
+
+
+.acc{
+  padding-top: 20%;
   width: 600px;
-
+  --bs-accordion-color: rgba(175,222,255,0.8);
+  --bs-accordion-bg: rgba(175,222,255,0.8);
+  justify-content: center;
+  --bs-accordion-border-color: rgba(0,0,0,0);
+  font-size: 30px !important;
 }
 
-.accordion li{
-  list-style: none;
-  width: 100%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  background: rgba(175,222,255,0.8);
+.acc-item{
+  font-size: 30px !important;  
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
               -6px -6px 10px -1px rgba(255,255,255,0.15);
 }
 
-.accordion li label{
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  background: rgba(175,222,255,0.8);
-}
-
-label::before {
-  content: '+';
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.accordion .content {
-  background: rgba(175,222,255,0.8);
-  color: rgb(0, 0, 0);
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion input[type="checkbox"]:checked+label+.content {
-  max-height: 400px;
-  padding: 10px 10px 20px;
+.acc-header{
+  font-size: 30px !important;
   background-color: rgba(175,222,255,0.8);
 }
 
-.accordion input[type="checkbox"]:checked+label::before{
-  content: '-';
+.acc-body {
+  font-size: 18px;
+  background-color: rgba(175,222,255,0.8);
+  color: #191970;
+  text-align: center;
 }
 
-.answer {
-  background-color:#A7C7E7;
+.accordion-button{
+  font-size: 30px !important;
+  background-color: rgba(175,222,255,0.8) !important;
+  color: #191970 !important;
 }
 
-.flex-item{
-  display: flex;
-  width: calc(50%-2em);
-  margin: 1em;
-  box-sizing: border-box;
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  font-size: 30px !important;
+  color:#191970 !important;
+  background-color: rgba(175,222,255,0.8) !important;
+}
+
+
+.accordion-button:not(.collapsed)::before {
+  filter: brightness(0%) invert(70%);
+  font-size: 30px !important;
+  background-color: rgba(175,222,255,0.8) !important;
+  color: #191970 !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-color: rgba(175,222,255,0.8) !important;
+}
+.accordion-button:hover {
+  background-color: rgba(175,222,255,1);
+  font-size: 30px !important;
 }

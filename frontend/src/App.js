@@ -6,19 +6,18 @@ import './App.css';
 
 const App = () => (
     <div>
-        <Navbar />
         <div className ="main">
-        <div className ="mainItem">
+          <div><Navbar /></div>
+        <div>
           <Header />
         </div>
-        <div className ="mainItem">
+        <div>
         <RInfo/>
         </div>
-        <div className ="mainItem">
+        <div>
         <MoreInfo />
         </div>
         
-        </div>
         <div>
         <Testing />
         </div>
@@ -36,7 +35,6 @@ const App = () => (
         </div>
       </div>
     </div>
-    
   );
 
 

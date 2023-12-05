@@ -9,6 +9,8 @@
   justify-content: space-around;
   align-content: flex-start;
   align-items: flex-end;
+  color: #191970;
+  font-size: 18px;
 }
 
 .container_donationsItem {

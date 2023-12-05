@@ -1,11 +1,17 @@
 import React from 'react';
 import './vaccinations.css';
 import logo1 from '../../assets/covid19VaxCard.jpg';
+import VaccinationsAccordion from './VaccinationsAccordion';
+
 const Vaccinations = () => {
   return (
     <div id = "Vaccinations">
       <h1 className="h1_vaccinations">Vaccinations</h1>
       <div className="container_vaccinations" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "100vh"}}>
+        <div>
+          <VaccinationsAccordion/>
+        </div>
+        {/*
         <ul class="accordion">
           <li>
               <input type="checkbox" name="accordion" id="first"/>
@@ -87,10 +93,10 @@ const Vaccinations = () => {
               </a>
             </div>
           </li>
-      </ul>
+  </ul>*/}
+  </div>
      </div>
-     </div>
-    
+
   )
 }
 

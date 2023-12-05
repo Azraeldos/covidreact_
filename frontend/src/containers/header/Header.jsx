@@ -4,8 +4,7 @@ import logo1 from '../../assets/masksBanner.jpg';
 
 const Header = () => {
   return (
-    <div className = "image-container">
-      <img className = "image-mask" src ={logo1} alt="Mask banner" /> 
+    <div className = "image-container" style={{backgroundImage: `url(${logo1})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", width: "100vw", height: "100vh"}}>
       <div className="overlay-text"> 
         <h1 className="tracking-in-expand-fwd">COVID-19 HUB: Local Resources</h1>
         <p>Welcome to the San Bernardino COVID-19 Resource Page; your 

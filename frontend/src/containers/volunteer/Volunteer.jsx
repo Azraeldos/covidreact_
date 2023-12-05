@@ -23,8 +23,8 @@ const Volunteer = () => {
           <p>San Bernardino County is always looking for volunteers to help locally with general support.</p>
           <a href="https://hr.sbcounty.gov/volunteerhub/" target="_blank"><button type="button" class="donate-button">Volunteer</button></a>
         </div>    
-      </div>
-     </div>
+  </div>
+  </div>
   )
 }
 
