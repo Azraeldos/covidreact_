@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3687c73a.css",
+    "main.css": "/static/css/main.55afa4e2.css",
     "main.js": "/static/js/main.0c6f3b07.js",
     "static/media/donateItems.jpg": "/static/media/donateItems.9341da80b07c1d974c59.jpg",
     "static/media/handWashing.jpg": "/static/media/handWashing.e9a7b4e7d988e7415f7d.jpg",
@@ -15,11 +15,11 @@
     "static/media/covidTestKit.webp": "/static/media/covidTestKit.6215d3128d5a683d3705.webp",
     "static/media/maskNew.jpg": "/static/media/maskNew.ad72215c7aca50ff2957.jpg",
     "index.html": "/index.html",
-    "main.3687c73a.css.map": "/static/css/main.3687c73a.css.map",
+    "main.55afa4e2.css.map": "/static/css/main.55afa4e2.css.map",
     "main.0c6f3b07.js.map": "/static/js/main.0c6f3b07.js.map"
   },
   "entrypoints": [
-    "static/css/main.3687c73a.css",
+    "static/css/main.55afa4e2.css",
     "static/js/main.0c6f3b07.js"
   ]
 }

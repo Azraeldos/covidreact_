@@ -40,9 +40,9 @@ app.use(function(err, req, res, next) {
 });
 
 const csvURL = 'https://ca-covid-r.info/ca_daily_cases_ww_and_r.csv';
-cron.schedule('0 0 0  * *', async () => {
+cron.schedule('0 0 0 * * *', async () => {
     getRValueArray(csvURL);
-    console.log("Job ran")
+    console.log("Job ran");
 })
 
 module.exports = app;
